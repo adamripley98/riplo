@@ -7,7 +7,7 @@ function Button({ value }) {
       type="button"
       name="button"
       value={value}
-      className="bg-transparent px-5 py-3 border-TEAL text-white uppercase text-lg"
+      className="bg-transparent px-5 py-3 border-TEAL text-white uppercase text-lg montserrat"
     />
   );
 }
