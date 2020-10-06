@@ -2,39 +2,37 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import Button from "../components/button";
 import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
 
 function IndexPage() {
   return (
-    <Layout>
+    <Layout className="bg-DARK">
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title="Home"
       />
 
-      <section className="text-center">
-        <img
-          alt="Cat and human sitting on a couch"
-          className="block w-1/2 mx-auto mb-8"
-          src={catAndHumanIllustration}
-        />
-
-        <h2 className="inline-block p-3 mb-4 text-2xl font-bold bg-yellow-400">
-          Hey there! Welcome to your first Gatsby site.
-        </h2>
-
-        <p className="leading-loose">
-          This is a barebones starter for Gatsby styled using{` `}
-          <a
-            className="font-bold text-gray-900 no-underline"
-            href="https://tailwindcss.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Tailwind CSS
-          </a>
-          , a utility-first CSS framework.
-        </p>
+      <section className="text-left">
+        <div className="flex">
+          <div className="w-2/3">
+            <h1 className="inline-block mb-2 text-6xl text-white font-bold">
+              GET IT BUILT WITH <span className="text-TEAL">RIPLO</span>
+            </h1>
+            <h2 className="inline-block mb-6 text-2xl text-white">
+              Seamless collaboration, total transparency, secure delivery. We’ve
+              developed a better approach to custom software development.
+            </h2>
+            <Button value="Find out more" />
+          </div>
+          <div className="w-1/3">
+            <img
+              alt="Cat and human sitting on a couch"
+              className="block w-1/2 mx-auto mb-8"
+              src={catAndHumanIllustration}
+            />
+          </div>
+        </div>
       </section>
     </Layout>
   );

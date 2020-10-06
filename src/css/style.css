@@ -1,5 +1,39 @@
 /*! purgecss start ignore */
 @tailwind base;
 @tailwind components;
+
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@700;800;900&family=Montserrat:wght@300&family=Open+Sans:wght@400;600&family=Rubik&display=swap");
+
+* {
+}
+
+body {
+  /* background: #0b0c10; */
+}
+
+h1 {
+  font-family: "Kanit", sans-serif;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.text-TEAL {
+  color: #66fcf1;
+}
+
+.bg-TEAL {
+  background: #66fcf1;
+}
+
+.bg-DARK {
+  background: #0b0c10;
+}
+
+.border-TEAL {
+  border: 2px solid #66fcf1;
+}
+
 /*! purgecss end ignore */
 @tailwind utilities;

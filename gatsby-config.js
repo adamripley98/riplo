@@ -5,9 +5,9 @@ const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Tailwind`,
-    description: `Gatsby starter styled with Tailwind`,
-    author: `@taylorbryant`,
+    title: `Riplo`,
+    description: `Freelance web development agency.`,
+    author: `@adamripley98`
   },
   plugins: [
     `gatsby-plugin-eslint`,
@@ -21,8 +21,8 @@ module.exports = {
         background_color: fullConfig.theme.colors.white,
         theme_color: fullConfig.theme.colors.teal["400"],
         display: `minimal-ui`,
-        icon: `src/images/tailwind-icon.png`,
-      },
+        icon: `src/images/tailwind-icon.png`
+      }
     },
     {
       resolve: `gatsby-plugin-postcss`,
@@ -30,12 +30,10 @@ module.exports = {
         postCssPlugins: [
           require(`tailwindcss`)(tailwindConfig),
           require(`autoprefixer`),
-          ...(process.env.NODE_ENV === `production`
-            ? [require(`cssnano`)]
-            : []),
-        ],
-      },
+          ...(process.env.NODE_ENV === `production` ? [require(`cssnano`)] : [])
+        ]
+      }
     },
-    `gatsby-plugin-offline`,
-  ],
+    `gatsby-plugin-offline`
+  ]
 };

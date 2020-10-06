@@ -3,12 +3,14 @@ import React from "react";
 
 import Header from "./header";
 
-function Layout({ children }) {
+function Layout({ children, className }) {
   return (
-    <div className="flex flex-col min-h-screen font-sans text-gray-900">
+    <div
+      className={`${className} flex flex-col min-h-screen font-sans text-gray-900`}
+    >
       <Header />
 
-      <main className="flex-1 w-full max-w-4xl px-4 py-8 mx-auto md:px-8 md:py-16">
+      <main className="flex-1 container px-4 py-8 mx-auto md:px-8 md:py-16">
         {children}
       </main>
 
@@ -44,6 +46,7 @@ function Layout({ children }) {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  className: PropTypes.string
 };
 
 export default Layout;
