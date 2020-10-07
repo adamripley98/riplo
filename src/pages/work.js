@@ -28,10 +28,6 @@ function WorkPage() {
           return <Project key={i} project={project} isDark={i % 2 !== 0} />;
         })}
       </section>
-      <section id="get-a-college-mentor">
-        <Project isDark={false} />
-        <Project isDark={true} />
-      </section>
     </Layout>
   );
 }

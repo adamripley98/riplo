@@ -4,7 +4,12 @@ import PropTypes from "prop-types";
 function TechCards({ stack, isDark }) {
   return (
     <div>
-      <h2 className="font-bold text-lg">Technologies Used:</h2>
+      <h2
+        className={`font-bold text-lg ${isDark ? "text-white" : "text-DARK"}`}
+      >
+        Technologies Used:
+      </h2>
+
       <div className="flex flex-wrap">
         {stack.map((tech, i) => {
           return (
@@ -14,7 +19,7 @@ function TechCards({ stack, isDark }) {
                 isDark ? "bg-TEAL" : "bg-DARK-TEAL"
               }`}
             >
-              <p className="text-DARK text-bold">{tech}</p>
+              <p className="text-DARK font-semibold">{tech}</p>
             </div>
           );
         })}
