@@ -15,7 +15,8 @@ h1 {
   font-family: "Kanit", sans-serif;
 }
 
-h2 {
+h2,
+p {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -25,6 +26,14 @@ h2 {
 
 .text-TEAL {
   color: #66fcf1;
+}
+
+.text-GRAY {
+  color: #c5c6c7;
+}
+
+.text-DARK {
+  color: #0b0c10;
 }
 
 .bg-TEAL {
@@ -37,6 +46,14 @@ h2 {
 
 .border-TEAL {
   border: 2px solid #66fcf1;
+}
+
+.thick-underline {
+  border-bottom: 15px solid #66fcf1;
+  line-height: -2rem;
+}
+
+.full-width-section {
 }
 
 /*! purgecss end ignore */

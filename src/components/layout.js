@@ -24,7 +24,7 @@ function Layout({ children, className }) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Taylor Bryant
+              Adam Ripley
             </a>
           </p>
 

@@ -15,8 +15,8 @@ function Header() {
   `);
 
   return (
-    <header className="bg-DARK mx-8">
-      <div className="flex flex-wrap items-center justify-between p-4 mx-auto md:p-8">
+    <header className="bg-DARK">
+      <div className="flex flex-wrap items-center justify-between p-4 mx-4 md:mx-8 md:p-6">
         <Link to="/">
           <h1 className="flex items-center text-white no-underline">
             <svg
