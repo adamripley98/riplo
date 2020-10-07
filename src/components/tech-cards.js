@@ -1,16 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function TechCards({ stack }) {
-  console.log("stack", stack);
+function TechCards({ stack, isDark }) {
   return (
     <div>
-      <div className="flex">
-        <h2>Technologies Used:</h2>
+      <h2 className="font-bold text-lg">Technologies Used:</h2>
+      <div className="flex flex-wrap">
         {stack.map((tech, i) => {
           return (
-            <div key={i} className="bg-gray-300 px-4 py-2 mr-3 my-2">
-              <h1 className="text-DARK">{tech}</h1>
+            <div
+              key={i}
+              className={`px-4 py-2 mr-3 my-1 ${
+                isDark ? "bg-TEAL" : "bg-DARK-TEAL"
+              }`}
+            >
+              <p className="text-DARK text-bold">{tech}</p>
             </div>
           );
         })}
@@ -20,11 +24,13 @@ function TechCards({ stack }) {
 }
 
 TechCards.defaultProps = {
-  stack: []
+  stack: [],
+  isDark: false
 };
 
 TechCards.propTypes = {
-  stack: PropTypes.array.isRequired
+  stack: PropTypes.array.isRequired,
+  isDark: PropTypes.bool.isRequired
 };
 
 export default TechCards;

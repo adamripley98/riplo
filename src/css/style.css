@@ -2,7 +2,7 @@
 @tailwind base;
 @tailwind components;
 
-@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@700;800;900&family=Montserrat:wght@300&family=Open+Sans:wght@400;600&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@700;800;900&family=Montserrat:wght@300;400;500;600&family=Open+Sans:wght@400;600&family=Rubik&display=swap");
 
 * {
 }
@@ -40,20 +40,40 @@ p {
   background: #66fcf1;
 }
 
+.bg-DARK-TEAL {
+  background: #45a293;
+}
+
 .bg-DARK {
   background: #0b0c10;
+}
+
+.bg-GRAY {
+  background: #c5c6c7;
 }
 
 .border-TEAL {
   border: 2px solid #66fcf1;
 }
 
-.thick-underline {
+.thick-underline-TEAL {
   border-bottom: 15px solid #66fcf1;
   line-height: -2rem;
 }
 
-.full-width-section {
+.thick-underline-DARK-TEAL {
+  border-bottom: 15px solid #45a293;
+  line-height: -2rem;
+}
+
+.box-TEAL {
+  border-bottom: 15px solid #66fcf1;
+  border-right: 15px solid #66fcf1;
+}
+
+.box-DARK-TEAL {
+  border-bottom: 15px solid #45a293;
+  border-right: 15px solid #45a293;
 }
 
 /*! purgecss end ignore */

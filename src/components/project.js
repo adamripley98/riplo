@@ -1,53 +1,48 @@
 import React from "react";
 import PropTypes from "prop-types";
 import TechCards from "./tech-cards";
-import GetACollegeMentorImg from "../images/college-mentor.png";
 
-const techStack = [
-  "React",
-  "Gatsby",
-  "Tailwind CSS",
-  "Airtable",
-  "Sendgrid",
-  "AWS S3"
-];
-
-function Project({ isDark }) {
+function Project({ project, isDark }) {
   return (
-    <div className={`${isDark ? "bg-DARK" : "bg-white"}`}>
-      <h1
-        className={` inline-block mb-6 text-6xl ${
-          isDark ? `text-white` : `text-DARK`
-        } uppercase font-bold thick-underline`}
-      >
-        Get A College Mentor
-      </h1>
-      <p
-        className={`${
-          isDark ? "text-white" : "text-DARK"
-        } text-xl font-bold mb-6`}
-      >
-        Web app for a non-profit founded by a few South African students
-        attending the University of Pennsylvania. The app connects South African
-        high schoolers with mentors who attend top universities in the United
-        States. Riplo designed and built the website utilizing Airtable&apos;s
-        API on the backend to allow the non-profit&apos;s non-technical founders
-        to make edits to the site.
-      </p>
-      <div className="w-full">
-        <img src={GetACollegeMentorImg} alt="macbook mockup" />
+    <div
+      className={`${
+        isDark ? "bg-DARK" : "bg-GRAY"
+      } pt-10 px-10 my-10 shadow-xl`}
+    >
+      <div className="flex items-center">
+        <div className="w-1/2 pb-10">
+          <h1
+            className={`inline-block mb-6 text-6xl ${
+              isDark
+                ? `text-white thick-underline-TEAL`
+                : `text-DARK thick-underline-DARK-TEAL`
+            } uppercase font-bold`}
+          >
+            {project.title}
+          </h1>
+          <div className="pr-10 text-left">
+            <p
+              className={`${isDark ? "text-white" : "text-DARK"} text-2xl mb-6`}
+            >
+              {project.description}
+            </p>
+            <TechCards isDark={isDark} stack={project.techStack} />
+          </div>
+        </div>
+        <img className="w-1/2" src={project.image} alt={project.title} />
       </div>
-      <TechCards stack={techStack} />
     </div>
   );
 }
 
 Project.defaultProps = {
-  isDark: false
+  isDark: false,
+  project: {}
 };
 
 Project.propTypes = {
-  isDark: PropTypes.bool.isRequired
+  isDark: PropTypes.bool.isRequired,
+  project: PropTypes.object.isRequired
 };
 
 export default Project;
