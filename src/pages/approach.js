@@ -2,15 +2,13 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Project from "../components/project";
-import projects from "../projects.js";
 
-function WorkPage() {
+function ApproachPage() {
   return (
     <Layout>
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title="Work"
+        title="Approach"
       />
 
       <section className="flex flex-col items-center md:flex-row">
@@ -35,14 +33,8 @@ function WorkPage() {
           </p>
         </div>
       </section>
-
-      <section id="projects">
-        {projects.map((project, i) => {
-          return <Project key={i} project={project} isDark={i % 2 === 0} />;
-        })}
-      </section>
     </Layout>
   );
 }
 
-export default WorkPage;
+export default ApproachPage;

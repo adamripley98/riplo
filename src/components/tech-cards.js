@@ -4,9 +4,7 @@ import PropTypes from "prop-types";
 function TechCards({ stack, isDark }) {
   return (
     <div>
-      <h2
-        className={`font-bold text-lg ${isDark ? "text-white" : "text-DARK"}`}
-      >
+      <h2 className={`font-bold ${isDark ? "text-white" : "text-DARK"}`}>
         Technologies Used:
       </h2>
 
@@ -19,7 +17,7 @@ function TechCards({ stack, isDark }) {
                 isDark ? "bg-TEAL" : "bg-DARK-TEAL"
               }`}
             >
-              <p className="text-DARK font-semibold">{tech}</p>
+              <p className="text-DARK">{tech}</p>
             </div>
           );
         })}
@@ -30,12 +28,12 @@ function TechCards({ stack, isDark }) {
 
 TechCards.defaultProps = {
   stack: [],
-  isDark: false
+  isDark: false,
 };
 
 TechCards.propTypes = {
   stack: PropTypes.array.isRequired,
-  isDark: PropTypes.bool.isRequired
+  isDark: PropTypes.bool.isRequired,
 };
 
 export default TechCards;

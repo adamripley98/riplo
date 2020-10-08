@@ -56,19 +56,20 @@ function Header() {
           {[
             {
               route: `/services`,
-              title: `Services`
+              title: `Services`,
             },
             {
               route: `/work`,
-              title: `Work`
+              title: `Work`,
             },
             {
               route: `/approach`,
-              title: `Approach`
-            }
-          ].map(link => (
+              title: `Approach`,
+            },
+          ].map((link) => (
             <Link
               className="block mt-4 text-white no-underline md:inline-block md:mt-0 md:ml-8 md:text-lg montserrat uppercase"
+              activeClassName="thin-underline-TEAL"
               key={link.title}
               to={link.route}
             >
