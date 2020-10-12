@@ -3,6 +3,7 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Button from "../components/button";
+import Technologies from "../components/technologies";
 import dudeImg from "../images/dude-final.png";
 
 function IndexPage() {
@@ -13,7 +14,7 @@ function IndexPage() {
         title="Home"
       />
 
-      <section className="text-left">
+      <section className="text-left header-section bg-DARK">
         <div className="flex items-center">
           <div className="w-2/3 mr-10">
             <p className="text-GRAY uppercase">
@@ -34,7 +35,15 @@ function IndexPage() {
           </div>
         </div>
       </section>
-      <section></section>
+      <section>
+        <p>
+          We take pride in staying up-to-date with modern web design and
+          development solutions so we can build our clients products that stand
+          out. Here&apos; a (non-inclusive and always expanding) list of
+          technologies we work with.
+        </p>
+        <Technologies />
+      </section>
     </Layout>
   );
 }

@@ -65,5 +65,9 @@ p {
   border-bottom: 5px solid #66fcf1;
 }
 
+.section-DARK {
+  background: #0b0c10;
+}
+
 /*! purgecss end ignore */
 @tailwind utilities;
