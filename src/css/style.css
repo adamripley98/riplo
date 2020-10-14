@@ -69,5 +69,14 @@ p {
   background: #0b0c10;
 }
 
+.link-TEAL {
+  font-weight: bold;
+  color: #66fcf1;
+}
+
+.link-TEAL:hover {
+  text-decoration: underline;
+}
+
 /*! purgecss end ignore */
 @tailwind utilities;

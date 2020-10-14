@@ -3,6 +3,9 @@ import React from "react";
 import Layout from "../components/layout";
 import Card from "../components/card";
 import SEO from "../components/seo";
+import CustomIcon from "../images/custom-icon.png";
+import IntegrationIcon from "../images/integration-icon.png";
+import StrongIcon from "../images/strong-icon.png";
 
 function ApproachPage() {
   return (
@@ -13,30 +16,45 @@ function ApproachPage() {
       />
 
       <section>
-        <div className="">
-          <p className="text-2xl text-DARK mb-10">
-            Each site we build is custom-made, allowing personalization on
-            everything from navigation flow to color scheme and font choice. A
-            website says a lot about a business, and we want to make sure that
-            our clients&apos; sites are just right.
-          </p>
-          <p className="text-2xl text-DARK mb-10">
-            We don&apos;t want to reinvent the wheel. Much of development is
-            knowing when to create your own solution to a problem and when to
-            use existing technologies. We integration the very best technologies
-            in our projects, allowing reliable, secure, and elegant solutions
-            fore e-commerce, user authentication, email flows, and more.
-          </p>
-          <p className="text-2xl text-DARK mb-10"></p>
-          <p className="text-2xl text-DARK mb-10">
-            Each site is completely personalized, but many of the underlying
-            systems (such as authentication flows, layout, components, database
-            models) have been built out in previous projects - allowing for high
-            quality at a faster pace of development, allowing us to dedicate
-            more time to the components that make your site unique.
-          </p>
-          Listen to you and suggest the best solution for you based off your
-          budget, timeframe, and preferences and constraints.
+        <div className="flex">
+          <div className="w-1/3 flex flex-col items-center text-justify pr-6">
+            <img src={CustomIcon} alt="custom-icon" className="w-32" />
+            <h1 className="font-bold text-3xl text-DARK">Personalized sites</h1>
+            <p className="text-xl text-DARK mt-4 mb-10">
+              Each site we build is custom-made, allowing personalization on
+              every element from navigation flow to color scheme and typography.
+              A website says a lot about a business, and we want to make sure
+              that our clients&apos; sites are sending out the right message.
+            </p>
+          </div>
+          <div className="w-1/3 flex flex-col items-center text-justify px-6">
+            <img
+              src={IntegrationIcon}
+              alt="integration-icon"
+              className="w-32"
+            />
+            <h1 className="font-bold text-3xl text-DARK">
+              Seamless integrations
+            </h1>
+            <p className="text-xl text-DARK mb-10">
+              Much of development is knowing when to create your own solution to
+              a problem and when to use existing technologies. We integrate with
+              the very best technologies in our projects, allowing reliable,
+              secure, and elegant solutions for e-commerce, user authentication,
+              email flows, and more.
+            </p>
+          </div>
+          <div className="w-1/3 flex flex-col items-center text-justify pl-6">
+            <img src={StrongIcon} alt="strong-icon" className="w-32" />
+            <h1 className="font-bold text-3xl text-DARK">Solid backbone</h1>
+            <p className="text-xl text-DARK mb-10">
+              Each site is completely personalized, but many of the underlying
+              systems (such as authentication flows, layout, components,
+              database models) have been built out in previous projects. This
+              means high quality at a faster pace of development, allowing us to
+              dedicate more time to the components that make your site unique.
+            </p>
+          </div>
         </div>
         <div>
           <h1>Typical process</h1>
