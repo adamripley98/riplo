@@ -24,7 +24,7 @@ function IndexPage() {
             <h1 className="-mt-2 mb-2 text-6xl text-white font-bold">
               GET IT BUILT WITH <span className="text-TEAL">RIPLO.</span>
             </h1>
-            <h2 className="mb-6 text-3xl text-white">
+            <h2 className="mb-6 text-3xl text-white montserrat">
               We rapidly build web apps with modern technologies and
               industry-trained best practices. Want something built? We&apos;d
               love to help.
@@ -45,9 +45,9 @@ function IndexPage() {
             over 3 years now and have been coding for many more years than that.
           </p>
           <p>
-            We specialize in full-stack development. We take pride in staying
-            up-to-date with modern web design and development solutions so we
-            can build our clients products that stand out. Here&apos; a
+            We specialize in full-stack Javascript development. We take pride in
+            staying up-to-date with modern web design and development solutions
+            so we can build our clients products that stand out. Here&apos;s a
             (non-inclusive and always expanding) list of technologies we work
             with.
           </p>

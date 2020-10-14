@@ -5,9 +5,7 @@ function GetInTouch() {
   return (
     <section className="bg-DARK">
       <div className="container px-4 py-8 mx-auto md:px-8 md:py-16">
-        <h1 className="text-6xl text-white font-bold uppercase -mb-3">
-          Get in touch
-        </h1>
+        <h1 className="text-6xl text-white -mb-3">Send us a message</h1>
         <a className="link-TEAL text-2xl" href="mailto:TODO">
           hello@riplo.io
         </a>
@@ -19,22 +17,22 @@ function GetInTouch() {
           <div className="flex">
             <div className="w-1/2 pr-6">
               <div className="flex">
-                <div className="w-1/2">
+                <div className="w-1/2 pr-6">
                   <label
-                    className="block mb-2 text-xs font-bold uppercase text-white"
+                    className="block mb-2 text-xs font-bold uppercase text-white focus:text-teal-300"
                     htmlFor="first-name"
                   >
                     First Name
                   </label>
 
                   <input
-                    className="w-full mb-6 form-input"
+                    className="w-full mb-6 px-4 py-3 bg-transparent border-solid border-2 border-white focus:outline-none focus:border-teal-300 text-white"
                     id="first-name"
                     placeholder="Jane"
                     type="text"
                   />
                 </div>
-                <div className="w-1/2">
+                <div className="w-1/2 pl-6">
                   <label
                     className="block mb-2 text-xs font-bold uppercase text-white"
                     htmlFor="last-name"
@@ -43,7 +41,7 @@ function GetInTouch() {
                   </label>
 
                   <input
-                    className="w-full mb-6 form-input"
+                    className="w-full mb-6 px-4 py-3 bg-transparent border-solid border-2 border-white focus:outline-none focus:border-teal-300 text-white"
                     id="last-name"
                     placeholder="Smith"
                     type="text"
@@ -59,7 +57,7 @@ function GetInTouch() {
                 </label>
 
                 <input
-                  className="mb-6 form-input w-full"
+                  className="w-full mb-6 px-4 py-3 bg-transparent border-solid border-2 border-white focus:outline-none focus:border-teal-300 text-white"
                   id="email"
                   placeholder="jane@smith.com"
                   type="text"
@@ -70,9 +68,12 @@ function GetInTouch() {
                   <span className="block mb-2 text-xs font-bold uppercase text-white">
                     Estimated Budget
                   </span>
-                  <select className="form-select block w-full mt-1">
-                    <option>Option 1</option>
-                    <option>Option 2</option>
+                  <select className="form-select w-full px-4 py-3 rounded-none mb-6 bg-transparent border-solid border-2 border-white focus:outline-none focus:border-teal-300 text-white">
+                    <option>TODO make this default</option>
+                    <option>Less than $500</option>
+                    <option>$500-1000</option>
+                    <option>$1000-2000</option>
+                    <option>$2000+</option>
                   </select>
                 </label>
               </div>
@@ -86,14 +87,14 @@ function GetInTouch() {
               </label>
 
               <textarea
-                className="w-full mb-6 form-textarea"
+                className="w-full mb-6 px-4 py-3 bg-transparent border-solid border-2 border-white focus:outline-none focus:border-teal-300 text-white"
                 id="message"
                 placeholder="Say something..."
                 rows="8"
               />
+              <Button value="Send message" />
             </div>
           </div>
-          <Button value="Send message" />
         </form>
       </div>
     </section>

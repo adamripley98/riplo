@@ -2,6 +2,7 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import ServiceSection from "../components/service-section";
 
 function ServicesPage() {
   return (
@@ -21,6 +22,11 @@ function ServicesPage() {
             of business-maturity. Find out more about all the different things
             that we can do for you and your organization.
           </p>
+          <p>
+            We spend time with you to understand what you&apos;re looking for in
+            order to ensure we are using the right frameworks, technologies, and
+            integrations to get your project done effectively.
+          </p>
         </div>
         <div>
           <p>
@@ -39,6 +45,7 @@ function ServicesPage() {
           <p>Ecommerce: Shopify, Squarespace</p>
         </div>
       </section>
+      <ServiceSection />
     </Layout>
   );
 }
